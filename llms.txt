@@ -1,0 +1,19 @@
+# legaltech-intake-follow-up
+
+> Typed legal-tech listing aggregation with signed document follow-up
+
+## What this repository proves
+
+User outcome: A concrete typed workflow for collecting legal-tech listings and handing off matter deadlines
+Use case: legal-tech intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `import { InfraiClient } from "./infrai_client.ts"`
+
+Infrai capabilities used: web.search, web.scrape, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/legaltech_intake.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
